@@ -1,0 +1,521 @@
+/* ----
+   Setting
+ ----*/
+
+$colorDarkerGray: #242526;
+$colorDarkGray: #343735;
+$colorGray: #88898D;
+$colorLightGray: #a6a7aa;
+$colorLighterGray: #c3c4c6;
+$colorLightestGray: #f2f2f2;
+$colorPageBG: #f5f5f7;
+$colorHR: #e5e5e5;
+$colorHRGray: #88898d;
+$colorGold: #cb9700;
+$colorDarkGold: #a27300;
+$colorRedOrange: #e43d30;
+$colorRed: #ee2737;
+$colorYellow: #f8b300;
+
+$mlw: 32px; //main Margin Large Width
+$glw: 24px; //main Gutter Large width
+$gmw: 16px; //main Gutter Medium width
+$gsw: 8px; //main Gutter Small width
+$igw: 4px; //icon with text Gutter width
+
+$fsBody: 1rem;
+
+$bRl: 30px; //border-radius: 30px; Large
+$bRm: 23px; //border-radius: 23px; medium
+
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+
+/* ----
+#productHeader
+ 產品頁子選單
+ ----*/
+
+.subPH::-webkit-scrollbar-track {
+  // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: white;
+  border-radius: $gmw;
+  -webkit-border-radius: $gmw;
+}
+
+.subPH::-webkit-scrollbar {
+  height: 6px;
+  background-color: white;
+  border-radius: $gmw;
+}
+
+.subPH::-webkit-scrollbar-thumb {
+  background-color: $colorHR;
+}
+
+.subPH {
+  overflow-x: scroll;
+  // width: 100%;
+  // scrollbar-width: thin;
+  // scrollbar-color: $colorHR;
+
+  ul {
+    width: 100%;
+    min-width: 730px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+
+    li {
+      margin-left: $gsw;
+      a {
+        border-radius: $igw;
+        padding: $igw $gsw;
+        &:hover {
+          color: white;
+          background-color: $colorDarkGray;
+        }
+      }
+    }
+
+    .buyBtn {
+      // padding: $igw;
+      color: white;
+      background-color: $colorGray;
+      display: block;
+
+    }
+  }
+}
+
+// #productHeader
+.menulogo {
+  width: 165px;
+  margin-left: -8px;
+}
+
+/* ----
+
+keyVisualDesign
+產品頁主視覺
+section #features0
+
+----*/
+
+.kvd-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 907.5px;
+  height: calc(100vh - 12px);
+
+
+  @media (max-width: 1399.99px) {
+    min-height: 783.75px;
+    height: calc(100vh - 135px);
+  }
+
+  @media (max-width: 1199.99px) {
+    min-height: 660px;
+    height: calc(100vh - 260px);
+
+  }
+
+  .kvdImg {
+    display: flex;
+    position: absolute;
+    max-width: 1320px;
+    // max-width: 1296px;
+    min-width: 960px;
+    width: 100%;
+
+    @media (max-width: 991.98px) {
+      margin: 0;
+      padding-right: 0;
+      align-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.kvd-Text-wrap {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+
+  // height: 100vh;
+
+}
+
+.kvd-Text {
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+
+  img {
+    display: block;
+    margin: 1% auto auto;
+    min-width: 125px;
+  }
+
+  .buyBtn { //kvd button
+    display: flex;
+    width: 140px;
+    height: 46px;
+    padding: 0px 27.714px 0px 28px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 23px;
+    background: $colorYellow;
+    margin: 3% auto auto;
+
+    span {
+      color: #fff;
+      text-align: center;
+      font-family: "Noto Serif Thai";
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 2px;
+    }
+
+    &:hover{
+      background: white;
+      span{
+        color: $colorYellow;
+      }
+    }
+
+  }
+}
+
+.pBoxShadow {
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.23);
+}
+.pTextShadow {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.PMainTitle,
+.PSubTitle {
+  --font-size: calc(
+    (var(--min-size) * 1px) + (var(--max-size) - var(--min-size)) *
+      ((100cqw - 320px) / (1920 - 320))
+  );
+
+  font-size: clamp(
+    var(--min-size) * 1px,
+    var(--font-size),
+    var(--max-size) * 1px
+  );
+}
+
+.PMainTitle {
+  //   font-size: 48px;
+  --min-size: 32;
+  --max-size: 48;
+  font-weight: 600;
+  color: $colorGray;
+  min-height: 72px;
+}
+
+.PSubTitle {
+  //h4
+  margin-top: 1.5%;
+  //  font-size: 28px;
+  --min-size: 19;
+  --max-size: 28;
+  font-weight: 900;
+  color: $colorGray;
+  line-height: 44px;
+}
+
+.remoteKvdImg {
+  width: 100%;
+  @media (min-width: 1399.99px) {
+    margin-top: 10%;
+  }
+
+  @media (max-width: 1399.98px) {
+    margin-top: 5%;
+  }
+
+  @media (max-width: 1199.98px) {
+      width: 80%;
+      left: 10%;
+      position: absolute;
+      margin-top: 3%;
+  }
+}
+
+.remotePNG {
+  position: absolute;
+  width: 40%;
+  left: 30%;
+
+  // animation: fadePNG 0.2s ease-in-out;
+  // animation-delay: 890ms;
+  animation: fadePNG 1s ease-in-out, movePNG 2s ease-in-out;
+  animation-delay: 890ms, 1090ms;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+
+
+@keyframes fadePNG {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes movePNG {
+0% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    opacity: 1;
+}
+
+50% {
+    transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+}
+
+100% {
+    transform: translateY(0px);
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}
+
+@keyframes shinePNG {
+    0% {
+        fill: rgba(255, 255, 255, 0);
+        opacity: 1;
+      }
+      50% {
+        fill: rgba(255, 255, 255, 0);
+        opacity: 1;
+      }
+      100% {
+        fill: rgba(255, 255, 255, 0.99);
+        opacity: 1;
+      }
+}
+
+.remoteGIF {
+  width: 75%;
+}
+
+/*--
+section #features1
+product-features
+
+--*/
+
+main.main.product-features{
+  margin: 0;
+}
+
+#features1,
+.fTitle2{
+padding-top: $mlw+$glw;
+}
+.fTitle2{
+  padding-top: $mlw;
+  padding-bottom: $mlw;
+}
+
+#features1{
+  // background-size: cover;
+background-size: contain;
+  // background: url("/images/1-2-p/1-2-product-bg_02.png") no-repeat top center;
+  background-repeat: no-repeat;
+  background-image: url("/images/1-2-p/1-2-product-bg_02.png");
+  .fTitle1{
+    width: 20%;
+    // height: 320px;
+    margin: auto;
+    min-width: 220px;
+    max-width: 260px;
+
+    .fs2,
+    .fs3,
+    .fs4{
+      white-space:nowrap;
+    }
+    
+    .fs1{//6大功能 結合為1 眾所期待
+      background: linear-gradient(180deg, #88898D 23.98%, #000 33.36%, #767676 55.16%, #9D9D9D 66.41%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+
+      text-align: center;
+      --min-size: 130;
+      --max-size: 200;
+      // font-size: 200px;
+      font-style: normal;
+      font-weight: 500;
+      // line-height: 1;
+      float:left;
+      margin-top:-15px;
+
+    }
+    
+    .fs2{
+      color: #947D2A;
+      --min-size: 16;
+      --max-size: 26;
+      // font-size: 26px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+    @media (min-width: 999.99px) {
+        letter-spacing: 1.3rem;
+    }
+    @media (max-width: 999.98px) {
+      letter-spacing: 1.3rem;
+    }
+    @media (max-width: 599.98px) {
+      letter-spacing: 1.2rem;
+    }
+    }
+
+  .fs3{
+    color:$colorDarkGray;
+    // font-size: 60px;
+    --min-size: 40;
+    --max-size: 60;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    }
+
+    .fs4{
+      color: $colorGray;
+      // font-size: 40px;
+      --min-size: 20;
+      --max-size: 40;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 14px;
+    }
+
+  }//.fTitle1
+
+  .fTitle2{
+    // text-align: center;
+    line-height: 1.2;
+    color: $colorDarkGray;
+    h3{
+      --min-size: 40;
+      --max-size: 60;
+      // font-size: 41px;
+      margin-bottom: 0;
+      text-align: center;
+    }
+    h4{
+
+      --min-size: 20;
+      --max-size: 40;
+      // font-size: 29px;
+      margin-bottom: 0;
+      text-align: center;
+    }
+    p{
+
+      text-align: center;
+      // font-size: 19px;
+      --min-size: 18;
+      --max-size: 28;
+      // font-weight: bold;
+      line-height: 1.7;
+    }
+  }//.fTitle2
+
+  .featuresBox-wrap{
+    display: grid;
+    padding: $mlw;
+
+    .fimg1{
+      width: 100%;
+      overflow: hidden;
+      border-radius: 23px;
+      background: radial-gradient(88.76% 71.73% at 50% 50%, #FFF 15%, #F9F9F9 50%, #DDDCDB 84.5%);
+      position: relative;
+
+      img{
+        width: 100%;
+      }
+
+      .ibg{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 60%;
+        height: 60%;
+        max-width: 209px;
+        max-height: 97px;
+        background-image: url("/images/1-2-p/roundedCorners.png");
+        background-repeat: no-repeat;
+        padding: $gmw $gmw $gmw 40px;
+        background-size: contain;
+        background-position: right bottom;
+
+        .ficon{
+          width: 100%;
+          min-width: 18px;
+          max-width: 22px;
+          float: left;
+          margin-right: $igw;
+        }
+
+        span.iconFont{
+          margin: 0;
+          // font-size: 18px;
+          --min-size: 16;
+          --max-size: 19;
+          font-weight: bold;
+          display: block;
+          line-height: 22px;
+          color: $colorGray;
+          text-align: left;
+          right: 15px;
+          bottom: 15px;
+          position: absolute;
+        }
+
+        // .remoteF{
+        //   // object-position:  50%;
+        // }
+      }
+    }
+  }
+
+}//#features1
+
+
+

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <title>SOGA 搜咖科技</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/reset.min.css" rel="stylesheet">
+  <link href="/css/index-style.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <nav class="bar-wrap navbar navbar-expand-lg">
+    <div class="container">
+      <div class="collapse navbar-collapse">
+        <ul class="bar navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <img src="images/svg/logoBar-megaC.svg" aria-label="mega廚餘機皇 Logo">
+          </li>
+          <li><img src="images/svg/logoBar-playRemote.svg" aria-label="play! Remote Logo">
+          <li><img src="images/svg/logoBar-tvsoga.svg" aria-label="tvSoga Logo"></li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="header" class="header-wrap navbar navbar-expand-lg shadow sticky">
+    <div class="container">
+      <h1 aria-label="SOGA搜咖科技"><a class="brand col-xs-3" href="index.html">
+          <img class="sogalogo" src="images/svg/logoSoga-index.svg" aria-label="SOGA Index Logo 搜咖科技 商標圖"></a></h1>
+
+      <div class="collapse navbar-collapse side-collapse-right in">
+        <nav class="main-menu collapse navbar-collapse" id="navbarScroll" role="navigation" aria-label="Main Menu 主選單">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item"><a class="nav-link dropdown-toggle" href="allproduct.html"
+                id="navbarDropdown" role="button" data-bs-toggle="dropdown" data-bs-toggle="dropdown"
+                aria-expanded="false" aria-label="all Product 點擊展開"><span>商品介紹</span></a>
+
+              <ul class="dropdown-menu product-menu" aria-labelledby="navbarDropdown" aria-label="all Product sub menu 商品介紹 子選單">
+                <li class="nav-item"><a class="dropdown-item" href="megaComposter.html" aria-label="MEGA Composter"><img
+                      class="rounded img-fluid" src="/images/Menu-1-product-03.jpg">
+                    <span>MEGA廚餘機皇</span>
+                  </a></li>
+                <li class="nav-item"><a class="dropdown-item" href="playRemote.html" aria-label="play! Remote"><img
+                      class="rounded img-fluid" src="/images/Menu-1-product-02.jpg">
+                    <span>次世代智慧遙控器</span>
+                  </a></li>
+                <li class="nav-item"><a class="dropdown-item" href="tvSogaApp.html" aria-label="智慧電視瀏覽器"><img
+                      class="rounded img-fluid" src="/images/Menu-1-product-01.jpg">
+                    <span>tv.SOGA APP</span>
+                  </a></li>
+                <li class="nav-item"><a class="dropdown-item" href="accessories.html" aria-label="accessories"><img
+                      class="rounded img-fluid" src="/images/Menu-1-product-04.jpg">
+                    <span>耗材與配件</span>
+                  </a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="news.html" aria-label="News"><span>最新消息</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="support.html" aria-label="Support"><span>支援服務</span></a>
+              <ul class="dropdown-menu support-menu" aria-labelledby="navbarDarkDropdownMenuLink" aria-label="Support sub menu 支援服務 子選單">
+                <li class="nav-item">
+                  <div class="title" aria-label="Guideline">新手指南</div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="support.html#tutorial"
+                        aria-label="Tutorial"><span>影片教學</span></a></li>
+                    <li class="list-group-item"><a href="support.html#qa" aria-label="Q&A"><span>常見問題</span></a></li>
+                    <li class="list-group-item"><a href="download.html#manual"
+                        aria-label="Manual Download"><span>使用手冊與文件</span></a></li>
+                    <li class="list-group-item"><a href="support.html#onlineStore"
+                        aria-label="Online Store"><span>官方線上銷售平台</span></a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <div class="title" aria-label="After-sales service">售後服務與維修</div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="support.html#warranty"
+                        aria-label="Warranty"><span>保固條款</span></a></li>
+                    <li class="list-group-item"><a href="support.html#refundsExchanges"
+                        aria-label="Refunds vs Exchanges"><span>如何退換貨</span></a></li>
+                    <li class="list-group-item"><a href="support.html#maintenanceCenter"
+                        aria-label="Maintenance Center"><span>維修中心</span></a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <div class="title" aria-label="Contact us">聯絡SOGA</div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="support.html#contactUs" aria-label="Customer Service Email: tvsoga@gmail.com"
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="tvsoga@gmail.com"><span>客服信箱</span></a>
+                    </li>
+                    <li class="list-group-item"><a href="https://lin.ee/sFVGdO6" target="_blank" aria-label="Line Chat 文字客服: @tvsoga"
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="@tvsoga"><span>Line Chat 文字客服</span></a></li>
+                  </ul>
+                  <div class="title mt-3">tv.SOGA專區</div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="support.html#tvSogaChat" data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        aria-label="only for TV: tv.Soga 產品討論，使用tv.SOGA APP可直接進入討論區" aria-hidden="true"><span>產品討論</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="download.html" aria-label="Download"><span>下載專區</span></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html" aria-label="About SOGA"><span>關於SOGA</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-right-wrap col-xs-3">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">
+          <a href="#" class="hamburger-wrap"><i class="i-hamburger" aria-label="icon hamburger 選單"></i></a>
+        </button>
+        <a href="https://mall.tvsoga.com/" class="shop-wrap" target="_blank"><i class="i-shop"
+            aria-label="SOGA Online Shop"></i><span>商店</span></a>
+      </div>
+    </div><!--.container-->
+  </header>
+
+  <div class="side-menu offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+    aria-modal="true" role="dialog" style="visibility: visible;" aria-label="side menu 側邊欄選單">
+    <div id="offcanvasRightLabel" class="offcanvas-header">
+      <!-- <h5>Offcanvas right</h5> -->
+      <button type="button" class="navbar-toggler" data-bs-dismiss="offcanvas" aria-label="Close 關閉" >
+        <a href="#" class="close-wrap"><i class="i-close"></i></a>
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <nav>
+        <!-- <ul class="sideMenu-wrap accordion accordion-flush" id="accordionFlushExample"> -->
+        <ul class="sideMenu-wrap" aria-label="side menu lists 側邊欄選單列表">
+          <!-- <li class="accordion-item"> -->
+          <li><!--sideMenuProduct-->
+            <a class="dropdown-item" href="#" data-target=".
+            navbar-ex1-collapse" onclick="collapse()" aria-label="all Product">商品介紹</a>
+            <div id="sideMenuProduct" class="navbar-ex1-collapse collapse" role="navigation">
+              <ul class="subSideMenu-wrap">
+                <li><a class="dropdown-item" href="megaComposter.html"
+                    aria-label="MEGA Composter"><span>MEGA廚餘機皇</span></a></li>
+                <li><a class="dropdown-item" href="playRemote.html"
+                    aria-label="play! Remote"><span>次世代智慧遙控器</span></a></li>
+                <li><a class="dropdown-item" href="tvSogaApp.html" aria-label="智慧電視瀏覽器"><span>tv.SOGA
+                      APP</span></a></li>
+                <li><a class="dropdown-item" href="accessories.html" aria-label="accessories"><span>耗材與配件</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="dropdown-item" href="news.html" aria-label="News">最新消息</a></li>
+          <li><a class="dropdown-item" href="support.html" aria-label="Support">支援服務</a></li>
+          <li><a class="dropdown-item" href="download.html" aria-label="Download">下載專區</a></li>
+          <li><a class="dropdown-item" href="about.html" aria-label="About SOGA">關於SOGA</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div><!--side-menu-->
+
+  <div class="container inner-wrap inner-banner">
+    <div class="row">
+      <div class="support-banner">
+      <h2 class="title2" aria-label="Support">支援服務</h2>
+      <img class="img-fluid" src="/images/supportBanner.jpg" aria-label="客服人員">
+      </div>
+  <main class="main col mx-auto container">
+      <section id="support" class="row">
+
+        <div id="tutorial" class="card-group">
+          <div class="card">
+          <div class="card-body col-12 col-sm-6">
+            <div class="icon-tutorial-wrap mx-auto">
+              <img class="icon" src="images/svg/icon-tutorial.svg">
+              <span class="title">影片教學</span>
+            </div>
+            <div class="tutorial-logo-wrap mx-auto">
+              <a class="logo" href="https://www.youtube.com/@tvSOGA" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="/images/svg/logoBar-megaC.svg" aria-label="MEGA廚餘機皇"></a>
+              <a class="logo" href="https://www.youtube.com/@tvSOGA" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="/images/svg/logoBar-playRemote.svg" aria-label="play! Remote 次世代智慧遙控器"></a>
+              <a class="logo tvsoga" href="https://www.youtube.com/@tvSOGA" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="/images/svg/logoBar-tvsoga.svg" aria-label="tv.SOGA 智慧電視瀏覽器"></a>
+            </div>
+        </div>
+        </div><!--card-->
+        <div class="card" id="tvSogaChat">
+          <a class="card-body col-12 col-sm-6" href="https://bbs.tvsoga.com/" target="_blank" aria-label="only for TV: tv.Soga 產品討論，使用tv.SOGA APP可直接進入討論區" title="only for TV: 使用tv.SOGA APP可直接進入討論區">
+          <div class="icon-tvsoga-chat-wrap mx-auto">
+            <img class="icon" src="images/svg/icon-tvsoga-chat.svg">
+            <span class="title">tv.SOGA專用 產品討論</span>
+        </div></a></div><!--card-->
+
+      </div>
+      
+      <!--warranty 保固條款-->
+      <article id="warranty" class="row">
+
+        <div class="warranty-wrap">
+        <h3 class="title3 text-center" aria-label="warranty">保固條款</h3>
+
+        <section class="qa-main-title">
+          <a class="title" data-bs-toggle="collapse" href="#collapseWarranty1" role="button" aria-expanded="false" aria-controls="collapseWarranty1">
+            保固期限
+          </a>
+        <div class="qa-subTitle collapse" id="collapseWarranty1">
+            <a class="title" data-bs-toggle="collapse" href="#Warrantysub1" role="button" aria-expanded="false" aria-controls="Warrantysub1">
+              <img src="/images/svg/icon-qa-warranty.svg"><span>產品的保固期限是多久？</span></a>
+            <div class="qa-subText" id="Warrantysub1">
+              本保固自購買日起生效，依照各別產品有所不同，七天內新機不良由本公司負擔來回運費。保固期限以購買憑證上的發票日期為準。請保留發票作為保固的有效證明。
+          </div>
+        </div>
+        </section><!--qa-main-title END-->
+
+        <section class="qa-main-title">
+          <a class="title" data-bs-toggle="collapse" href="#collapseWarranty2" role="button" aria-expanded="false" aria-controls="collapseWarranty2">
+            保固範圍
+          </a>
+        <div class="qa-subTitle collapse" id="collapseWarranty2">
+            <a class="title" data-bs-toggle="collapse" href="#Warrantysub1" role="button" aria-expanded="false" aria-controls="Warrantysub1">
+              <img src="/images/svg/icon-qa-warranty.svg"><span>有效保固服務</span></a>
+            <div class="qa-subText" id="Warrantysub1">
+              本公司對客戶送回的維修產品有應盡之維修義務。在產品保固期內且依使用手冊使用仍有瑕疵的退貨維修，客戶無須負擔任何維修人工成本及零件更換的費用。七天內新機不良由本公司負擔來回運費；若購買超過七天則需由客戶負擔單趟運費（由客戶自行寄至維修中心）。
+          </div><!--Warrantysub1 END-->
+
+          <a class="title" data-bs-toggle="collapse" href="#Warrantysub1" role="button" aria-expanded="false" aria-controls="Warrantysub1">
+            <img src="/images/svg/icon-qa-warranty.svg"><span>非保固範圍服務</span></a>
+          <div class="qa-subText" id="Warrantysub1">
+            產品因意外或人為不當使用或未經授權維修等非依使用手冊使用而造成產品損壞者，則不在本公司保固範圍之內，本公司得向客戶酌收產品維修服務費用。<br><br>產品於非保固範圍期間故障，將收取檢修費用，若需更換零件，則依循本公司零件費用收費，本公司將在報價並取得客戶同意後進行維修。<br><br>產品於非保固範圍故障，若經報價後取消維修，本公司將收取該維修產品之檢測費用。付費維修之零件將提供自維修後三個月之保固。
+        </div><!--Warrantysub1 END-->
+
+        <a class="title" data-bs-toggle="collapse" href="#Warrantysub1" role="button" aria-expanded="false" aria-controls="Warrantysub1">
+          <img src="/images/svg/icon-qa-warranty.svg"><span>其他注意事項</span></a>
+        <div class="qa-subText" id="Warrantysub1">
+          若判定該送修品須付費修理，但是客戶放棄維修時，經通知取件後若不予取回、不予受領或不予回應達30日以上，本公司將不對該送修產品負保管責任，得逕自予以處分。
+      </div><!--Warrantysub1 END-->
+
+        </div>
+        </section><!--qa-main-title END-->
+
+        <section class="qa-main-title">
+          <a class="title" data-bs-toggle="collapse" href="#collapseWarranty1" role="button" aria-expanded="false" aria-controls="collapseWarranty1">
+            保固條件
+          </a>
+        <div class="qa-subTitle collapse" id="collapseWarranty1">
+            <a class="title" data-bs-toggle="collapse" href="#Warrantysub1" role="button" aria-expanded="false" aria-controls="Warrantysub1">
+              <img src="/images/svg/icon-qa-warranty.svg"><span>請詳閱使用說明書</span></a>
+            <div class="qa-subText" id="Warrantysub1">
+              使用本產品前請詳閱使用說明書，以確保對產品有正確認知。使用本產品即視為您已理解、接受內容所提及的全部條款。
+          </div>
+        </div>
+        </section><!--qa-main-title END-->
+
+        <section class="qa-main-title">
+          <a class="title" data-bs-toggle="collapse" href="#collapseWarranty1" role="button" aria-expanded="false" aria-controls="collapseWarranty1">
+            限制與排除
+          </a>
+        <div class="qa-subTitle collapse" id="collapseWarranty1">
+            <a class="title" data-bs-toggle="collapse" href="#Warrantysub1" role="button" aria-expanded="false" aria-controls="Warrantysub1">
+              <img src="/images/svg/icon-qa-warranty.svg"><span>保固除外責任規定</span></a>
+            <div class="qa-subText" id="Warrantysub1">
+              以下內容均不在保固範圍之內，本公司得酌收費用或不予受理<br>
+              1. 如產品有附保証卡未加蓋經銷商店章或是經過塗改，則該保証卡視同無效。 <br>
+              2. 產品標籤序號不清楚、被更改或被撕掉者。 <br>
+              3. 天災、水災、地震等不可抗力之災害及人為處理上之疏忽。 <br>
+              4. 對零件等加以不當修理及改造或調整。<br>
+              5. 購買後因運送移動、掉落所產生之故障或損害。<br>
+              6. 保固期過後之故障與損害的發生。<br>
+              7. 避免強烈的撞擊及重壓，這將會對產品的電子元件造成損壞。<br>
+              8. 放置高溫中(超過攝氏60度)；陽光直射處或熱源、密閉的汽車中(特別是夏天)。<br>
+              9. 放置濕度高的地方(例如浴室)、灰塵多的地方。<br>
+              10. 放置於潮溼位置或進水、泡水導致內部基板線路腐蝕(機板)<br>
+              11. 重壓或不明的外力擠壓,造成在LCD上出現破損。<br>
+              12. 人為狀況造成商品損壞(如：USB頭折斷、摔機、鏡面或是LCD破裂、外殼嚴重刮傷破損等)。<br>
+              13. 外觀刮傷、掉漆，或因天災、人為因素造成損壞，皆不在保固範圍內，不予換新，但可以酌收維修費用或更換堪用品。<br>
+              14. 因意外、人為破壞、不當使用、安裝、自行變更零件、天然災害或電源問題所造成之損壞,屬於人為因素損壞。<br>
+              15. 因使用本產品所造成的軟體資料任何損失或法律問題及責任，本公司概不負責。<br>
+              16. 因產品故障、維修造成機器中的資料損失或服務期間及其前後因「產品」無法使用所致直接或間接損害，本公司概不負責。<br>
+              17. 本服務保證僅適用「產品」所含的硬體零件。不包含硬體或軟體使用之技術協助，亦不包括「產品」內所含之任何軟體產品。公司不接受「產品」所提供之任何軟體或所提供之任何上述類似軟體之所有明定或隱含之保固，除非於任何附加軟體服務保證書中有明確規定。<br>
+          </div>
+        </div>
+        </section><!--qa-main-title END-->
+
+      </div><!--warranty-wrap END-->
+      </article><!--warranty END-->
+
+      <!--refundsExchanges 如何退換貨-->
+      <article id="refundsExchanges" class="row">
+
+        <div class="refundsExchanges-wrap">
+        <h3 class="title3 text-center" aria-label="refunds Exchanges">如何退換貨</h3>
+
+        <section class="qa-main-title">
+          <a class="title" data-bs-toggle="collapse" href="#collapseWarranty1" role="button" aria-expanded="false" aria-controls="collapseWarranty1">
+            退貨條款與注意事項
+          </a>
+
+        <div class="qa-subTitle collapse" id="collapseWarranty1">
+            <a class="title" data-bs-toggle="collapse" href="#Warrantysub1" role="button" aria-expanded="false" aria-controls="Warrantysub1">
+              <img src="/images/svg/icon-qa-info.svg"><span>已啟動使用之家電商品退貨規定</span></a>
+            <div class="qa-subText" id="Warrantysub1">
+              家電產品為保障消費者權益及基於個人衛生考量，商品一經啟動使用，相關配件即無法完全恢復原狀，除新品故障外，商品一經拆封使用即買受關係成立，須依據民法物之瑕疵相關法條來執行，而非無條件退貨。
+          </div>
+
+          <a class="title" data-bs-toggle="collapse" href="#Warrantysub1" role="button" aria-expanded="false" aria-controls="Warrantysub1">
+            <img src="/images/svg/icon-qa-info.svg"><span>家電商品退貨條件與要求</span></a>
+          <div class="qa-subText" id="Warrantysub1">
+            為維護個人及家庭衛生，請於商品未拆封使用前提出退貨需求。退貨商品必須保持全新狀態且完整包裝，包括商品主體、配件、贈品、保證書、原廠包裝、購買證明及所有附隨文件資料。除商品本身固有之瑕疵外，其他因損毀或缺漏配件而導致的退貨要求可能不被接受。
+        </div>
+        
+        <a class="title" data-bs-toggle="collapse" href="#Warrantysub1" role="button" aria-expanded="false" aria-controls="Warrantysub1">
+          <img src="/images/svg/icon-qa-info.svg"><span>適當包裝與退貨商品完整性</span></a>
+        <div class="qa-subText" id="Warrantysub1">
+          退回商品時，請使用本公司寄送時所使用的外包材原封包裝，切勿在原廠外盒上直接黏貼或書寫文字。原廠外盒及原廠包裝為商品的一部分，若有遺失、毀損或缺件可能影響您的退貨權益。請注意保持商品完整性，以確保順利辦理退貨。
+      </div>
+
+        <a class="title" data-bs-toggle="collapse" href="#Warrantysub1" role="button" aria-expanded="false" aria-controls="Warrantysub1">
+          <img src="/images/svg/icon-qa-info.svg"><span>尺寸、色差與瑕疵界定</span></a>
+        <div class="qa-subText" id="Warrantysub1">
+          尺寸2cm誤差、螢幕色差、線頭外露等，在國際驗貨標準都是屬於可接受範圍，並不屬於瑕疵。因電腦解析度及螢幕等問題會有色差差異，以收到的商品實品為準。
+      </div>
+
+      <a class="title" data-bs-toggle="collapse" href="#Warrantysub1" role="button" aria-expanded="false" aria-controls="Warrantysub1">
+        <img src="/images/svg/icon-qa-info.svg"><span>如何取消訂單?</span></a>
+      <div class="qa-subText" id="Warrantysub1">
+        如在未出貨前想取消訂單，請致電客服，若貨物已寄出，請在收到貨後，辦理退貨，產生之物流費用需自行負擔。
+    </div>
+
+        </div>
+        </section><!--qa-main-title END-->
+
+        <section class="qa-main-title">
+          <a class="title" data-bs-toggle="collapse" href="#collapseWarranty1" role="button" aria-expanded="false" aria-controls="collapseWarranty1">
+            運送相關
+          </a>
+        <div class="qa-subTitle collapse" id="collapseWarranty1">
+            <a class="title" data-bs-toggle="collapse" href="#Warrantysub1" role="button" aria-expanded="false" aria-controls="Warrantysub1">
+              <img src="/images/svg/icon-qa-info.svg"><span>目前提供那些配送方式?</span></a>
+            <div class="qa-subText" id="Warrantysub1">
+              本商品僅提供郵局或物流配送方式<br><br>
+              1. 當確認您的訂單已經付款完成，您的訂單將依各商品出貨時間進行安排；部份熱門品項逢節慶檔期可能會有短暫缺貨的情況發生，敬請見諒。<br>
+              2. 配送地區：寄送範圍及運費依各商品運送地區為主，下單前請先確認。<br>
+              3.在正常條件下，商品到貨日為出貨日後的3-4天工作日到達，如欲物流繁忙的情形（例如節慶、購物節...等）商品到貨日可能會延遲，其依據物流公司實際配送情形而定。<br>
+              4.運送僅限台灣本島，離島買家請至蝦皮商城購買 <a href="https://shopee.tw/tv.soga" target="_blank">https://shopee.tw/tv.soga</a><br><br>
+
+              運送標準：商品包裝後，重量不超過15公斤。如超出該範圍將另外包裝並加收運費。<br>
+              ※運費收取的標準依郵局或物流公司的規範與公告為準，若標準與收費有所調整請見諒。<br>
+              ※商品一律由合作店家的物流出貨為準，若欲查詢商品寄送進度，可聯繫客服索取物流編號與聯繫方式。
+          </div>
+        </div>
+        </section><!--qa-main-title END-->
+
+        <section class="qa-main-title">
+          <a class="title" data-bs-toggle="collapse" href="#collapseWarranty1" role="button" aria-expanded="false" aria-controls="collapseWarranty1">
+            付款與退款相關
+          </a>
+        <div class="qa-subTitle collapse" id="collapseWarranty1">
+            <a class="title" data-bs-toggle="collapse" href="#Warrantysub1" role="button" aria-expanded="false" aria-controls="Warrantysub1">
+              <img src="/images/svg/icon-qa-info.svg"><span>目前提供那些付款方式？</span></a>
+            <div class="qa-subText" id="Warrantysub1">
+              目前提供的付款方式有兩種：<br><br>
+              1.『信用卡』付款<br>
+              2.『線上匯款』<br><br>
+              ※本公司透過第三方EC Pay支付系統收取款項，安全有保障。
+          </div>
+        </div>
+        </section><!--qa-main-title END-->
+
+      </div><!--warranty-wrap END-->
+    </article><!--warranty END-->
+
+     <!--qa 常見問題-->
+     <article id="qa" class="row">
+
+      <div class="qa-wrap">
+      <h3 class="title3 text-center" aria-label="refunds Exchanges">常見問題</h3>
+
+      <section class="qa-main-title">
+        <a class="title" data-bs-toggle="collapse" href="#collapseWarranty1" role="button" aria-expanded="false" aria-controls="collapseWarranty1">
+          常見問題
+        </a>
+
+      <div class="qa-subTitle collapse" id="collapseWarranty1">
+          <a class="title" data-bs-toggle="collapse" href="#Warrantysub1" role="button" aria-expanded="false" aria-controls="Warrantysub1">
+            <img src="/images/svg/icon-qa-faq.svg"><span>是否開立發票/統一編號?</span></a>
+          <div class="qa-subText" id="Warrantysub1">
+            統一開立電子發票，如想開立統編發票、紙本發票、退貨發票…等其他發票問題，請您聯繫<a href="#contactUs" aria-label="MEGA Composter">客服</a>詢問。
+        </div>
+      </div>
+
+      <div class="qa-subTitle collapse" id="collapseWarranty1">
+        <a class="title" data-bs-toggle="collapse" href="#Warrantysub1" role="button" aria-expanded="false" aria-controls="Warrantysub1">
+          <img src="/images/svg/icon-qa-faq.svg"><span>產品的相關問題?</span></a>
+        <div class="qa-subText" id="Warrantysub1">
+          請至產品介紹下的各產品頁查看:
+          <a href="megaComposter.html" aria-label="MEGA Composter">MEGA廚餘機皇</a>、
+          <a href="playRemote.html" aria-label="play! Remote">智慧電視遙控器</a>、
+          <a href="tvSogaApp.html" aria-label="智慧電視瀏覽器 only for TV">TV.SOGA APP</a>
+      </div>
+    </div>
+
+      </section><!--qa-main-title END-->
+    </div><!--warranty-wrap END-->
+  </article><!--warranty END-->
+
+      <div id="onlineStore" class="card-group">
+        <div class="card">
+          <a class="card-body col-12 col-sm-6" href="https://shopee.tw/tv.soga" target="_blank">
+          <div class="icon-tvsoga-chat-wrap mx-auto">
+            <img class="icon" src="images/svg/icon-shopee.svg">
+            <span class="title">官方直營蝦皮商店</span>
+        </div></a></div><!--card-->
+        <div class="card">
+          <a class="card-body col-12 col-sm-6" href="https://mall.tvsoga.com/" target="_blank">
+          <div class="icon-tvsoga-chat-wrap mx-auto">
+            <img class="icon" src="images/svg/icon-shop.svg">
+            <span class="title">官方線上商店</span>
+        </div></a></div><!--card-->
+      </div><!--card-group-->
+
+      <h3 class="title3 text-center" aria-label="Contact Us">聯絡SOGA</h3>
+      <div id="contactUs" class="card-group">
+        <div id="maintenanceCenter" class="card">
+          <div class="card-body col-12 col-sm-6">
+          <div class="icon-tvsoga-chat-wrap mx-auto">
+            <img class="icon" src="images/svg/icon-repair.svg">
+            <span class="title">維修中心</span>
+            <span>(111)台北市士林區承德路4段29-1號</span>
+        </div></div></div><!--card-->
+        <div class="card">
+          <a class="card-body col-12 col-sm-6" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tvsoga@gmail.com&su=SOGA官網客服團隊收" target="_blank">
+          <div class="icon-tvsoga-chat-wrap mx-auto">
+            <img class="icon" src="images/svg/icon-email.svg">
+            <span class="title">客服信箱</span>
+            <span>tvsoga@gmail.com</span>
+        </div></a></div><!--card-->
+        <div class="card">
+          <a class="card-body col-12 col-sm-6" href="https://lin.ee/sFVGdO6" target="_blank">
+          <div class="icon-tvsoga-chat-wrap mx-auto">
+            <img class="icon" src="images/svg/icon-chatlLine.svg">
+            <span class="title">Line Chat 文字客服</span>
+            <span>@tvsoga</span>
+        </div></a></div><!--card-->
+      </div><!--card-group-->
+      </section>
+  </main>
+</div>
+</div><!--inner-wrap-->
+
+  <nav class="breadcrumb-wrap" aria-label="breadcrumb">
+    <div class="container">
+      <div class="row">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="index.html"><img src="images/svg/i-breadcrumb-home.svg" aria-label="Home"></a></li>
+      <li class="breadcrumb-item">支援服務</li>
+    </ol>
+    </div>
+  </div>
+  </nav>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 footerShare">
+          <div class="social-wrap">
+            <!-- facebook -->
+            <a href="https://www.facebook.com/tvsoga" role="button" aria-label="facebook"><i class="bi bi-facebook"></i></a>
+            <!-- instagram -->
+            <a href="https://www.instagram.com/soga_home_/" role="button" aria-label="instagram"><i class="bi bi-instagram"></i></a>
+            <!-- tiktok -->
+            <a href="https://www.tiktok.com/@soga_home" role="button" aria-label="tiktok"><i class="bi bi-tiktok"></i></a>
+            <!-- youtube -->
+            <a href="https://www.youtube.com/@tvSOGA" role="button" aria-label="youtube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footerProduct col-xs-12 col-sm-6 col-md-3 col-lg-4">
+          <ul class="footer">
+            <li class="subtitle">全部商品</li>
+            <li><a href="megaComposter.html" aria-label="MEGA Composter">MEGA廚餘機皇</a></li>
+            <li><a href="playRemote.html" aria-label="play! Remote">智慧電視遙控器</a></li>
+            <li><a href="accessories.html" aria-label="Accessories">耗材與配件</a></li>
+            <li class="subtitle footer-app">APP應用程式</li>
+            <li><a href="tvSogaApp.html" aria-label="智慧電視瀏覽器 only for TV">TV.SOGA APP</a></li>
+            <!-- <li>MEGA 綠生活 APP</li> -->
+          </ul>
+        </div>
+        <div class="footerSupport col-xs-12 col-sm-6 col-md-3 col-lg-4">
+          <ul class="footer">
+            <li class="subtitle">支援服務</li>
+            <li><a href="support.html#tutorial" aria-label="Tutorial">影片教學</a></li>
+            <li><a href="support.html#qa" aria-label="Q&A">常見問題</a></li>
+            <li><a href="support.html#maintenanceCenter" aria-label="Maintenance Center">維修中心</a></li>
+            <li><a href="privacy.html" aria-label="Privacy">隱私權政策</a></li>
+            <li><a href="internetServices.html" aria-label="Internet Services">服務條款</a></li>
+            <li><a href="sitemap.html" aria-label="Sitemap">網站地圖</a></li>
+          </ul>
+        </div>
+        <div class="footerContact col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <ul class="footer">
+            <li class="subtitle">聯絡SOGA</li>
+            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tvsoga@gmail.com&su=SOGA官網客服團隊收"
+                aria-label="email us: tvsoga@gmail.com"><img class="i-footeremail" src="/images/svg/i-footer-email.svg"
+                  > tvsoga@gmail.com</a></li>
+            <li><a href="https://lin.ee/sFVGdO6" target="_blank" aria-label="add Line Chat: @tvsog"><img class="i-footerlinechat" src="/images/svg/i-footer-lineChat.svg"> @tvsoga</a></li>
+            <li class="footerServiceTime" aria-label="Service Time">週一至週五 10:00AM - 05:00 PM <br>( 午休時間 12:30 - 01:30 PM ）
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 copyright" aria-label="Copyright">© 2024 SOGA. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

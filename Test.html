@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品介紹</title>
+    <!-- 引入 Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="side-menu offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" aria-modal="true" role="dialog" style="visibility: visible;">
+        <div id="offcanvasRightLabel" class="offcanvas-header">
+            <!-- <h5>Offcanvas right</h5> -->
+            <button type="button" class="navbar-toggler" data-bs-dismiss="offcanvas" aria-label="Close">
+                <a href="#" class="close-wrap"><i class="i-close" title="close menu 關閉選單"></i></a>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <nav>
+                <ul class="sideMenu-wrap accordion accordion-flush" id="accordionFlushExample">
+                    <li class="accordion-item">
+                        <a class="dropdown-item" href="#sideMenuProduct" data-bs-toggle="collapse" data-bs-target="#sideMenuProduct" aria-expanded="false" aria-controls="sideMenuProduct">商品介紹</a>
+                        <div id="sideMenuProduct" class="accordion-collapse collapse" style="">
+                            <ul class="subSideMenu-wrap">
+                                <li><a class="dropdown-item" href="megaComposter.html" title="MEGA Composter 廚餘機皇"><span>MEGA廚餘機皇</span></a></li>
+                                <li><a class="dropdown-item" href="playRemote.html" title="play! Remote 次世代智慧遙控器"><span>次世代智慧遙控器</span></a></li>
+                                <li><a class="dropdown-item" href="tvSogaApp.html" title="tv.SOGA APP 智慧電視瀏覽器"><span>tv.SOGA APP</span></a></li>
+                                <li><a class="dropdown-item" href="accessories.html" title="耗材與配件"><span>耗材與配件</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">最新消息</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">支援服務</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">下載專區</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">關於SOGA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 引入 Bootstrap 5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript 代碼 -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var sideMenuProduct = document.getElementById("sideMenuProduct");
+        if (sideMenuProduct) {
+            var isCollapsed = true; // 初始狀態為關閉
+            var productLink = document.querySelector('[data-bs-target="#sideMenuProduct"]');
+            if (productLink) {
+                productLink.addEventListener('click', function () {
+                    if (isCollapsed) {
+                        sideMenuProduct.classList.remove('collapse'); // 先移除 collapse 類
+                        sideMenuProduct.classList.add('show'); // 如果是關閉的，打開子目錄
+                    } else {
+                        sideMenuProduct.classList.remove('show'); // 如果是打開的，關閉子目錄
+                        sideMenuProduct.classList.add('collapse'); // 再添加 collapse 類
+                    }
+                    isCollapsed = !isCollapsed; // 更新狀態
+                });
+            }
+        }
+    });
+    </script>
+</body>
+</html>
+
+
+
+ 
